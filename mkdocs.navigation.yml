@@ -1,0 +1,44 @@
+---
+# Copyright 2021 ConsenSys Software Inc.
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
+# the License. You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+# an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+# specific language governing permissions and limitations under the License.
+
+# This configuration must inherit the base configuration file available in the Doctools docker image.
+# See source at https://github.com/ConsenSys/doctools.action-builder/blob/main/common/custom_theme/base.yml
+INHERIT: mkdocs.extra.yml # DO NOT MODIFY THIS LINE
+
+nav:
+  - Overview:
+      - overview/index.md
+      - New system features: overview/new-features.md
+  - Contribute:
+      - contribute/index.md
+      - MkDocs and Markdown guide:
+          - contribute/markdown/index.md
+          - Configure and format Markdown: contribute/markdown/configure-and-format.md
+          - Extensions: contribute/markdown/extensions.md
+          - Macros: contribute/markdown/macros.md
+          - Pluglets: contribute/markdown/pluglets.md
+      - Style guide: contribute/style-guide.md
+      - Fix CI/CD errors: contribute/fix-cicd-errors.md
+      - Use the common submodule: contribute/use-common-submodule.md
+      - Review a pull request: contribute/review-pr.md
+      - Create a diagram: contribute/create-diagram.md
+  - Preview:
+      - Preview site using the old system: preview/old-system.md
+      - Preview site using the new system: preview/new-system.md
+  - Create:
+      - Create a new documentation site: create/create-doc-site.md
+      - Advanced:
+          - Update or create a site template: create/advanced/create-site-template.md
+          - Add custom CSS and JavaScript: create/advanced/add-css-and-js.md
+  - Reference:
+      - Documentation release process: reference/release-process.md
+      - Code of conduct: reference/code-of-conduct.md
